@@ -1,4 +1,6 @@
-// MainScene クラスを定義
+/**
+ * メインクラス
+ */
 phina.define('MainScene', {
   superClass: 'CanvasScene',
   init: function() {
