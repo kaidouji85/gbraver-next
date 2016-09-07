@@ -1,9 +1,14 @@
+const glob = require('glob');
+
+const phinaClassPathList = glob.sync('./phina-class/**/*.js');
+
+
 /**
  * プロダクションビルドの設定
  *
  */
 module.exports = {
-  entry: './src/index.js',
+  entry: ['./src/index.js'].concat(phinaClassPathList),
   output: {
     filename: 'index.js',
     path: './public/javascripts'
