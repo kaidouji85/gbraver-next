@@ -2,9 +2,13 @@
   "name": "gbraver-next",
   "version": "0.0.1",
   "license": "MIT",
+  "engines": {
+    "node": "6.x"
+  },
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "postinstall": "webpack",
     "build": "webpack",
     "watch": "webpack --watch"
   },
