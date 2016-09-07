@@ -1,8 +1,9 @@
-require('phina.js').globalize();
+phina.globalize();
+
 require('./scene/main-scene');
 
-phina.main(function(){
-  var app = phina.game.GameApp({
+phina.main(()=>{
+  let app = phina.game.GameApp({
     startLabel: 'main'
   });
   app.run();
