@@ -1,4 +1,7 @@
 node_modules/
 public/javascripts/index.js
+public/javascripts/index.js.map
 .idea/
 npm-debug.log
+*~
+.DS_Store
